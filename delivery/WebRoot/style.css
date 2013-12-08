@@ -21,19 +21,40 @@ html { padding:0; margin:0;}
 	float:right;
 	width:340px;
 	padding-top: 53px;
-	padding-right: 150px;
+	padding-right: 120px;
 	padding-bottom: 0px;
 	padding-left: 0px;
+	position: relative;
 }
+/*
 .search form { display:block; float:right; padding:0;}
-.search span { display:block; float:left; background: url(images/search_bg.gif) left top no-repeat; width:149px; padding:0 5px; height:33px;}
+*/
+.search span { 
+/*
+display:block; float:left; background: url(images/search_bg.gif) left top no-repeat; width:149px; padding:0 5px; height:33px;
+*/
+	position:absolute;
+	right:80px;
+	top:8px;
+}
 .search form .keywords { line-height:14px; float:left; border:0; width:149px; padding:9px 0; height:14px; background:none; margin:0; font:normal 14px Arial, Helvetica, sans-serif; color:#9c9c9c;}
 .search form .button { float:left; margin:0; padding:0;}
 /* menu */	
 .menu { float:right; padding:23px 0 0 0; margin:0; width:420px; height:35px;}
 .menu ul { text-align:right; padding:0; margin:0; list-style:none; border:0; height:35px;}
 .menu ul li { float:left; margin:0; padding:2px; border:0; height:35px;}
-.menu ul li a { float:left; margin:0; padding:10px 0; color:#5c8783; font:normal 12px Arial, Helvetica, sans-serif; text-decoration:none;}
+.menu ul li a {
+	float:left;
+	margin:0;
+	padding:10px 0;
+	color:#5c8783;
+	text-decoration:none;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 15px;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+}
 .menu ul li a span { padding:10px 13px; background:none;}
 .menu ul li a:hover { background:url(images/r_menu.gif) right no-repeat;}
 .menu ul li a:hover span { background:url(images/l_menu.gif) left no-repeat;}
@@ -78,7 +99,7 @@ html { padding:0; margin:0;}
 .Recent2  { width:220px; float:left; padding:10px; margin:10px 0;}
 /********** block index **********/
 .body { margin:0; padding:0 0 20px 0;}
-.body_resize { width:954px; margin:0 auto; padding:0 15px; border:1px solid #d4d4d4; background:#eee;}
+.body_resize { width:954px; margin:0 auto; padding:0 15px; border:2px solid #d4d4d4; background:#eee;}
 .body_resize h2 { font:normal 20px Arial, Helvetica, sans-serif; color:#282828; padding:5px 5px; margin:0; border-bottom:1px solid #dfdfdf;}
 .body_resize h3 { font:normal 20px Arial, Helvetica, sans-serif; color:#282828; padding:5px 5px; margin:0;}
 .body_resize h2 span { font:normal 11px Arial, Helvetica, sans-serif; color:#819e9c; padding:5px 0; margin:0;}
@@ -92,7 +113,7 @@ html { padding:0; margin:0;}
 }
 .left ul { list-style:none; margin:0 0 0 210px; padding:10px 0 20px 0;}
 .left li { background:url(images/port_ul_li.gif) left no-repeat; padding:2px 20px; margin:0; font: normal 12px Arial, Helvetica, sans-serif; color:#5c8783; line-height:1.8em;}
-.body_resize img { float:left; margin:20px 10px; padding:0;}
+.body_resize img { float:left; margin:10px 4px; padding:0;}
 .body_resize img.floated { float:left; margin:10px 5px; padding:0;}
 .right  {
 	width:460px;
@@ -137,10 +158,13 @@ li.bg, .bg { clear:both; border-top:1px solid #dfdfdf; padding:0; margin:10px 0;
 
 
 .form_content{
-width:620px;
-margin:30px auto;
-padding:10px;
-background:url(images/center_bg2.gif) repeat top left;
+	width:700px;
+	padding:10px;
+	background:url("images/form_top_bg.gif") repeat scroll left top transparent;
+	margin-top: 30px;
+	margin-right: auto;
+	margin-bottom: 30px;
+	margin-left: auto;
 }
 
 fieldset{
@@ -161,9 +185,11 @@ padding:2px 5px 2px 5px;
 }
 
 .form-row {
-clear: none;
-float:none;
-padding:5px;
+	clear: none;
+	float:none;
+	padding:5px 10px;
+	height:40px;
+	width: 600px;
 }
 
 .form-row-select {
@@ -235,6 +261,98 @@ border:none;
 }
 
 
+textarea.required{
+width:300px;
+height:22px;
+border: 1px solid #95E0EF;
+background-color:#f3fcfe;
+border-left-width:2px;
+padding:5px 0 0 2px;
+float:left;
+}
+
+.login_form{
+border:1px solid #95E0EF;
+background-color:#e1ecef;
+height:300px;
+}
+
+#login_table{
+margin-left:0;
+margin-top:96px;
+font-size:18px;
+}
+
+#register_table{
+margin-left:0;
+margin-top:46px;
+font-size:18px;
+}
+.companyselect1 {
+	padding: 10px 10px 20px 10px;
+}
+
+
+
+
+
+.a-company-icon {
+	height: 38px;
+	width: 100px;
+	float: left;
+	padding: 5px 0px 5px;
+}
+
+
+
+
+
+.companylabel {
+}
+.companylabel {
+	height: 30px;
+}
+.company-left {
+	width: 312px;
+	float: left;
+	height: 210px;
+	padding: 40px 0px 0px 0px;
+}
+.a-company-in-left {
+	height: 25px;
+	background-color: #CCCCCC;
+}
+.a-company-in-left1 {
+	height: 25px;
+}
+.company-label {
+	height: 25px;
+	padding: 0px 5px 0px 5px;
+	float: left;
+	width: 80px;
+}
+.company-frame {
+	border: 1px solid #aaa;
+	height: 392px;
+}
+.field-widge-submit {
+	float: right;
+	padding: 0 15px 0 0;
+}
+.select-address {
+	float: none;
+	padding: 40px 10 30px 0;
+	height: 70px;
+}
+.select-content-address {
+	padding: 10px;
+	border: 1px solid #aaa;
+}
+.select-content {
+	height: 70px;
+	padding: 20px 0 25px 0;
+}
+
 input.required{
 width:300px;
 height:22px;
@@ -243,4 +361,69 @@ background-color:#f3fcfe;
 border-left-width:2px;
 padding:5px 0 0 2px;
 float:left;
+}
+.zhuce-button {
+	width: 50px;
+	padding: 20px 10px 10px 10px;
+}
+.login-button {
+	width: 50px;
+	padding: 30px 10px 10px 0px;
+}
+.field-result-left {
+	width: 250px;
+	float: left;
+	padding: 5px 10px 5px 10px;
+	border: 1px #C3B5DF solid;
+	background-color: #FFFFFF;
+	height: 100%;
+}
+.field-result-right {
+	float: left;
+	height: auto;
+	width: 360px;
+	border: 1px #C3B5DF solid;
+	background-color: #FFFFFF;
+	padding: 10px 10px 5px 10px;
+}
+.field-label11 {
+	width: 250px;
+	height: 25px;
+	float: left;
+	padding: 5px 10px 0 10px;
+	background: #0fcdf6;
+	color: #FFFFFF;
+	border: 1px #C3B5DF solid;
+}
+.field-label12 {
+	width: 360px;
+	float: left;
+	height: 25px;
+	padding: 5px 10px 0 10px;
+	background: #0fcdf6;
+	color: #FFFFFF;
+	border: 1px #C3B5DF solid;
+}
+.courier-title {
+	height: 50px;
+	width: 660px;
+}
+.note11 {
+	color: #FFFFFF;
+}
+.message11 {
+	background-color: #FFFFFF;
+}
+.error-text {
+	width: 340px;
+	float: left;
+	padding: 90px 0 0 90px;
+}
+.big-text {
+	font-size: 38px;
+	font-family: "新宋体";
+	padding: 20px 0 10px 0;
+}
+.a-record {
+	height: auto;
 }
